@@ -1,0 +1,23 @@
+[package]
+name = "kekonese"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anchor-client = "0.27.0"
+anchor-syn = { version = "0.27.0", features = ["idl", "hash"] }
+flate2 = "1.0.25"
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+borsh = "0.9"
+base64 = "0.21.0"
+bs58 = "0.4.0"
+heck = "0.4.1"
+regex = "1.7.2"
+clap = { version="4.1.11", features=["derive"] }
+solana-transaction-status = "1.15.2"
+anyhow = "1.0.70"
